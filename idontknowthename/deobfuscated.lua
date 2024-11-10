@@ -272,9 +272,9 @@ k.Window = function(l_6_0, l_6_1)
       if wait() then
         X.BackgroundColor3 = k.accentclr
       else
-         -- Warning: missing end command somewhere! Added here
+
       end
-       -- Warning: missing end command somewhere! Added here
+
     end
    end)()
   local _ = {}
@@ -493,9 +493,9 @@ k.Window = function(l_6_0, l_6_1)
             if wait() then
               ak.BorderColor3 = k.accentclr
             else
-               -- Warning: missing end command somewhere! Added here
+
             end
-             -- Warning: missing end command somewhere! Added here
+
           end
             end)()
          end
@@ -584,11 +584,11 @@ k.Window = function(l_6_0, l_6_1)
                   ap.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
                 end
               else
-                 -- Warning: missing end command somewhere! Added here
+
               end
-               -- Warning: missing end command somewhere! Added here
+
             end
-             -- Warning: missing end command somewhere! Added here
+
           end
             end)()
          end
@@ -698,9 +698,9 @@ k.Window = function(l_6_0, l_6_1)
             if wait() then
               ay.BackgroundColor3 = k.accentclr
             else
-               -- Warning: missing end command somewhere! Added here
+
             end
-             -- Warning: missing end command somewhere! Added here
+
           end
             end)()
         au.Change = function(l_6_0, l_6_1)
@@ -710,7 +710,7 @@ k.Window = function(l_6_0, l_6_1)
             do return end
             aB.Text = D .. ": " .. tostring(l_6_1 and math.floor(l_6_1 / at[2] * (at[2] - at[1]) + at[1]) or 0)
             ay.Size = UDim2.new((l_6_1 or 0) / at[2], 0, 1, 0)
-             -- Warning: missing end command somewhere! Added here
+
           end
             end
         return au
@@ -922,7 +922,7 @@ k.Window = function(l_6_0, l_6_1)
                   aZ.BackgroundTransparency = typeof(aK) == "string" and aK == j and 0 or 1
                   aZ.BorderColor3 = k.accentclr
                   do return end
-                   -- Warning: missing end command somewhere! Added here
+
                 end
                      end)()
               aT.Size = UDim2.new(1, -16, 0, aX.AbsoluteContentSize.Y + (#aW:GetChildren() - 2) * 2)
@@ -934,9 +934,9 @@ k.Window = function(l_6_0, l_6_1)
             if wait() then
               aO.BorderColor3 = k.accentclr
             else
-               -- Warning: missing end command somewhere! Added here
+
             end
-             -- Warning: missing end command somewhere! Added here
+
           end
             end)()
          end
@@ -1024,17 +1024,6 @@ k.Window = function(l_6_0, l_6_1)
         bj.Position = UDim2.new(1, -16, 1, -6)
         bj.Size = UDim2.new(0, 10, 1, -12)
         bj.ZIndex = 4
-         -- DECOMPILER ERROR: Overwrote pending register.
-
-         -- DECOMPILER ERROR: Overwrote pending register.
-
-         -- DECOMPILER ERROR: Overwrote pending register.
-
-         -- DECOMPILER ERROR: Overwrote pending register.
-
-         -- DECOMPILER ERROR: Overwrote pending register.
-
-         -- DECOMPILER ERROR: Confused while interpreting a jump as a 'while'
 
       end
       table.insert(k.colorpickerframes, bi)
@@ -1133,13 +1122,13 @@ k.Window = function(l_6_0, l_6_1)
           if wait() then
             be.BorderColor3 = k.accentclr
           else
-             -- Warning: missing end command somewhere! Added here
+
           end
-           -- Warning: missing end command somewhere! Added here
+
         end
          end)()
       end
-       -- Warning: undefined locals caused missing assignments!
+
          end
       a8.Bind = function(l_6_0, l_6_1, l_6_2, l_6_3)
         if (f(e, l_6_2) and not f(d, l_6_2)) or not tostring(l_6_2) then
@@ -1343,4 +1332,3 @@ bL:Button("Copy Discord Invite", function()
   end
 end
 )
-
