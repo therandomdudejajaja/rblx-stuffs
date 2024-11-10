@@ -20,7 +20,6 @@
 // @match        *://workink.net/*/*
 // @match        *://r.work.ink/*/*
 // @match        *://keyrblx.com/getkey/*
-// @match        *://*.*/s*
 // @match        *://paster.so/*
 // @match        *://gateway.platoboost.com/a/8?id=*
 // @exclude      https://github.com/*
