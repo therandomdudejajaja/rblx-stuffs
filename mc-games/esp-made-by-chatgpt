@@ -1,0 +1,60 @@
+local highlightedParts = {}
+
+while true do
+    -- Get all parts in workspace.Blocks
+    local parts = workspace.Blocks:GetDescendants()
+
+    -- Loop through each part in reverse order
+    for i = #parts, 1, -1 do
+        local part = parts[i]
+
+        -- Check if the part is a BasePart or MeshPart
+        if part:IsA("BasePart") or part:IsA("MeshPart") then
+            -- Check if the part's name contains any of the specified ores
+            local oreNames = { "steelore", "coalore", "goldore", "rubyore", "diamondore", "amethystore" }
+            local isOre = false
+
+            for _, ore in ipairs(oreNames) do
+                if part.Name:lower():find(ore) then
+                    isOre = true
+                    break
+                end
+            end
+
+            if isOre then
+                -- Check if a highlight part already exists
+                local highlight = part:FindFirstChild("Highlight")
+
+                if not highlight then
+                    -- Create a new Highlight part
+                    highlight = Instance.new("Highlight")
+                    highlight.Parent = part
+
+                    -- Set the highlight color based on the part name
+                    if part.Name:lower():find("steelore") then
+                        -- Steel color for SteelOre
+                        highlight.FillColor = Color3.new(0.7, 0.7, 0.7)
+                    elseif part.Name:lower():find("coalore") then
+                        -- Dark gray color for CoalOre
+                        highlight.FillColor = Color3.new(0.2, 0.2, 0.2)
+                    elseif part.Name:lower():find("goldore") then
+                        -- Gold color for GoldOre
+                        highlight.FillColor = Color3.new(1, 0.843, 0)
+                    elseif part.Name:lower():find("rubyore") then
+                        -- Red color for RubyOre
+                        highlight.FillColor = Color3.new(1, 0, 0)
+                    elseif part.Name:lower():find("diamondore") then
+                        -- Blue color for DiamondOre
+                        highlight.FillColor = Color3.new(0, 0, 1)
+                    elseif part.Name:lower():find("amethystore") then
+                        -- Purple color for AmethystOre
+                        highlight.FillColor = Color3.new(0.5, 0, 0.5)
+                    end
+                end
+            end
+        end
+    end
+
+    -- Wait for 2 seconds before refreshing
+    wait(2)
+end
