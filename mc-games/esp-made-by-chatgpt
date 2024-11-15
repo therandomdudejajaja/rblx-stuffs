@@ -10,7 +10,7 @@ local oreColors = {
 }
 
 local currentIndex = 1
-local batchSize = 100 -- Number of parts to process per frame
+local batchSize = 1000 -- Number of parts to process per frame
 
 RunService.Heartbeat:Connect(function()
     local parts = workspace.Blocks:GetDescendants()
